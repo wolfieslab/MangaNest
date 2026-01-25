@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Sign-Up</title>
 </head>
+
 <body>
-    <form action="">
-        
-    </form>
+    <div class="container">
+        <div class="section">
+            <div class="background">
+                <div class="logo">MangaNest</div>
+                <img src="branden-skeli-kQ0_flbwBI4-unsplash.jpg">
+                <p><a href="https://unsplash.com/photos/a-person-holding-a-bunch-of-cards-kQ0_flbwBI4">Photo </a>by 
+                    <a href="https://unsplash.com/@branden_skeli">Branden Skeli</a> on 
+                    <a href="https://unsplash.com/">Unsplash</a> </p>
+            </div>
+        </div>
+        <div class="section">
+            <div>
+                <h2>Create your MangaNest account</h2>
+                <p>Join a cozy space to track, discover, and share manga you love</p>
+            </div>
+            <form action="" method="post">
+                <label for="user-first-name">First Name</label>
+                <input type="text" name="first-name" id="user-first-name">
+                <label for="user-last-name">Last Name</label>
+                <input type="text" name="last-name" id="user-last-name">
+                <label for="user-email">Email</label>
+                <input type="email" name="email" id="user-email">
+                <label for="user-phone-number">Phone Number</label>
+                <input type="tel" name="phone-number" id="user-phone-number">
+                <label for="user-password">Password</label>
+                <input type="password" name="password" id="user-password">
+                <label for="user-confirm-password">Confirm Password</label>
+                <input type="password" name="connfirm-password" id="user-confirm-password">
+
+                <button type="submit">Join the Nest</button>
+            </form>
+            <div>
+                <p>Already a member? <a href="">Log in</a></p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
