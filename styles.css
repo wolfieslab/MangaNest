@@ -1,9 +1,63 @@
+@font-face {
+    font-family: 'Plastik';
+    src: url('font/Plastik.woff2') format('woff2'),
+        url('font/Plastik.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-Regular.woff2') format('woff2'),
+        url('font/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.background img {
+.container {
+    display: flex;
+}
+
+.background {
+    background-image: url("branden-skeli-kQ0_flbwBI4-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 600px;
     height: 100dvh;
+    position: relative;
+}
+
+.background .logo {
+    position: absolute;
+    top: 18%;
+    width: 100%;
+    background: rgba(0, 0, 0, 50%);
+    font-family: 'Plastik';
+    font-size: 38px;
+    color: white;
+    text-align: center;
+    padding: 8px 0px;
+}
+
+.logo p {
+    padding: inherit;
+}
+
+.credit {
+    color: white;
+    left: 30%;
+    position: absolute;
+    bottom: 1%;
+}
+
+.credit a {
+    color: inherit;
 }
