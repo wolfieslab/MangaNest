@@ -16,6 +16,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.woff2') format('woff2'),
+        url('Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -24,6 +33,7 @@
 
 .container {
     display: flex;
+    background-color: #fff7ed;
 }
 
 .background {
@@ -40,24 +50,126 @@
     top: 18%;
     width: 100%;
     background: rgba(0, 0, 0, 50%);
-    font-family: 'Plastik';
-    font-size: 38px;
+    font-family: 'Plastik', Montserrat, "Segoe UI", Arial, sans-serif;
     color: white;
     text-align: center;
-    padding: 8px 0px;
+    padding: 12px 0px;
 }
 
 .logo p {
     padding: inherit;
+    font-size: 60px;
+    letter-spacing: 0.1em;
+}
+
+.logo p span {
+    color: orangered;
+    font-weight: 900;
+    text-shadow: 2px 1px 1px white;
 }
 
 .credit {
     color: white;
-    left: 30%;
+    left: 25%;
     position: absolute;
     bottom: 1%;
+    font-size: 1.2em;
 }
 
 .credit a {
     color: inherit;
+}
+
+.credit p {
+    font-size: inherit;
+}
+
+.form-section {
+    /* background-color: #ffffff; */
+    font-family: 'Poppins', "Helvetica Neue", Arial, Helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+}
+
+.header h2 {
+    font-family: 'Plastik', "Helvetica Neue", Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+}
+
+
+fieldset {
+    border: none;
+    display: flex;
+    gap: 10%;
+    margin-top: 2%;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.8em;
+}
+
+.input-wrapper input {
+    width: 300px;
+    padding: 0.3em;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+.form-inputs {
+    margin-top: 3em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    background-color: #fdf8f3;
+    box-shadow: 0 0.6em 1em #aaa;
+}
+
+.form-inputs p {
+    font-weight: 500;
+    font-size: 1.6em;
+}
+
+.header {
+    padding-top: 10em;
+}
+
+.header,
+.form-inputs,
+.submit-button,
+.ask-login {
+    padding-left: 10%;
+}
+
+button[type="submit"] {
+    margin-top: 4%;
+    padding: 0.4em 1.4em;
+    font-size: 1.2em;
+    border-radius: 4px;
+    color: white;
+    background-color: orangered;
+    font-weight: bold;
+}
+
+.ask-login p {
+    margin-top: 1.2em;
+    font-size: 1.2em;
+}
+
+.ask-login p a {
+    text-decoration: none;
+    color: orangered;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.4em;
 }
