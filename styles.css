@@ -25,6 +25,13 @@
     font-display: swap;
 }
 
+:root {
+    --primary: orangered;
+    --bg-main: #fff7ed;
+    --bg-form: #fdf8f3;
+    --overlay-text: white;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -33,7 +40,7 @@
 
 .container {
     display: flex;
-    background-color: #fff7ed;
+    background-color: var(--bg-main);
 }
 
 .background {
@@ -51,7 +58,7 @@
     width: 100%;
     background: rgba(0, 0, 0, 50%);
     font-family: 'Plastik', Montserrat, "Segoe UI", Arial, sans-serif;
-    color: white;
+    color: var(--overlay-text);
     text-align: center;
     padding: 12px 0px;
 }
@@ -63,13 +70,13 @@
 }
 
 .logo p span {
-    color: orangered;
+    color: var(--primary);
     font-weight: 900;
     text-shadow: 2px 1px 1px white;
 }
 
 .credit {
-    color: white;
+    color: var(--overlay-text);
     left: 25%;
     position: absolute;
     bottom: 1%;
@@ -98,7 +105,6 @@
     letter-spacing: 0.2em;
     font-weight: 800;
 }
-
 
 fieldset {
     border: none;
@@ -129,7 +135,7 @@ fieldset {
     margin-top: 3em;
     padding-top: 2em;
     padding-bottom: 3em;
-    background-color: #fdf8f3;
+    background-color: var(--bg-form);
     box-shadow: 0 0.6em 1em #aaa;
 }
 
@@ -154,8 +160,8 @@ button[type="submit"] {
     padding: 0.4em 1.4em;
     font-size: 1.2em;
     border-radius: 4px;
-    color: white;
-    background-color: orangered;
+    color: var(--overlay-text);
+    background-color: var(--primary);
     font-weight: bold;
 }
 
@@ -166,7 +172,7 @@ button[type="submit"] {
 
 .ask-login p a {
     text-decoration: none;
-    color: orangered;
+    color: var(--primary);
     font-weight: 700;
 }
 
