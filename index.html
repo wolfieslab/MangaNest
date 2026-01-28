@@ -30,10 +30,11 @@
             <form action="" method="post">
                 <div class="form-inputs">
                     <p>Let's do this!</p>
+                    <p>Fields marked with * are required</p>
                     <fieldset>
                         <div class="input-wrapper">
-                            <label for="user-first-name">First Name</label>
-                            <input type="text" name="first-name" id="user-first-name">
+                            <label for="user-first-name">First Name *</label>
+                            <input type="text" name="first-name" id="user-first-name" placeholder="" required>
                         </div>
                         <div class="input-wrapper">
                             <label for="user-last-name">Last Name</label>
@@ -42,22 +43,22 @@
                     </fieldset>
                     <fieldset>
                         <div class="input-wrapper">
-                            <label for="user-email">Email</label>
-                            <input type="email" name="email" id="user-email">
+                            <label for="user-email">Email *</label>
+                            <input type="email" name="email" id="user-email" placeholder="" required>
                         </div>
                         <div class="input-wrapper">
                             <label for="user-phone-number">Phone Number</label>
-                            <input type="number" name="phone-number" id="user-phone-number">
+                            <input type="tel" name="phone-number" id="user-phone-number" placeholder="" pattern="[0-9+ ]{7,15}">
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-wrapper">
-                            <label for="user-password">Password</label>
-                            <input type="password" name="password" id="user-password">
+                            <label for="user-password">Password *</label>
+                            <input type="password" name="password" id="user-password" placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                         </div>
                         <div class="input-wrapper">
-                            <label for="user-confirm-password">Confirm Password</label>
-                            <input type="password" name="connfirm-password" id="user-confirm-password">
+                            <label for="user-confirm-password">Confirm Password *</label>
+                            <input type="password" name="confirm-password" id="user-confirm-password" placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                         </div>
                     </fieldset>
                 </div>
@@ -67,7 +68,7 @@
                 </div>
             </form>
             <div class="ask-login">
-                <p>Already have a account? <a href="">Log in</a></p>
+                <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
     </div>

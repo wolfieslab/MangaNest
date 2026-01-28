@@ -48,6 +48,7 @@
     background-position: center;
     background-size: cover;
     width: 600px;
+    height: 100vh;
     height: 100dvh;
     position: relative;
 }
@@ -56,7 +57,7 @@
     position: absolute;
     top: 18%;
     width: 100%;
-    background: rgba(0, 0, 0, 50%);
+    background: rgba(0, 0, 0, 0.5);
     font-family: 'Plastik', Montserrat, "Segoe UI", Arial, sans-serif;
     color: var(--overlay-text);
     text-align: center;
@@ -92,7 +93,6 @@
 }
 
 .form-section {
-    /* background-color: #ffffff; */
     font-family: 'Poppins', "Helvetica Neue", Arial, Helvetica, sans-serif;
     width: 100%;
     display: flex;
@@ -101,6 +101,7 @@
 }
 
 .header h2 {
+    font-size: 1.8em;
     font-family: 'Plastik', "Helvetica Neue", Arial, Helvetica, sans-serif;
     letter-spacing: 0.2em;
     font-weight: 800;
@@ -120,7 +121,7 @@ fieldset {
 
 .input-wrapper label {
     text-transform: uppercase;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.15em;
     font-size: 0.8em;
 }
 
@@ -129,6 +130,20 @@ fieldset {
     padding: 0.3em;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 1.2em;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.input-wrapper input:invalid:not(:placeholder-shown) {
+    outline: none;
+    border: 1px solid red;
+    box-shadow: 0 0 0 0.5px;
+}
+
+.input-wrapper input:focus {
+    outline: none;
+    border: 1px solid #66b2f8;
+    box-shadow: 0 0 0 0.5px;
 }
 
 .form-inputs {
@@ -139,9 +154,15 @@ fieldset {
     box-shadow: 0 0.6em 1em #aaa;
 }
 
-.form-inputs p {
-    font-weight: 500;
+.form-inputs p:first-of-type {
+    /* font-style: italic; */
     font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 0.4em;
+}
+
+.form-inputs p {
+    font-size: 1.2em;
 }
 
 .header {
@@ -157,12 +178,20 @@ fieldset {
 
 button[type="submit"] {
     margin-top: 4%;
-    padding: 0.4em 1.4em;
+    padding: 0.7em 2.2em;
     font-size: 1.2em;
-    border-radius: 4px;
+    border-radius: 10px;
     color: var(--overlay-text);
     background-color: var(--primary);
     font-weight: bold;
+    border: 0.5px solid #ccc;
+}
+
+button[type="submit"]:hover {
+    background-color: #e03800;
+    cursor: pointer;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .ask-login p {
@@ -173,9 +202,5 @@ button[type="submit"] {
 .ask-login p a {
     text-decoration: none;
     color: var(--primary);
-    font-weight: 700;
-}
-
-p {
-    font-size: 1.4em;
+    font-weight: bold;
 }
